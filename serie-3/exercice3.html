@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script3.js">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionnaire</h1>
+        <p>Quelle est la capitale de l'Italie ?</p>
+        <form id="quizForm">
+            <div>
+                <input type="radio" id="option1" name="answer" value="Paris">
+                <label for="option1">Paris</label>
+            </div>
+            <div>
+                <input type="radio" id="option2" name="answer" value="Berlin">
+                <label for="option2">Berlin</label>
+            </div>
+            <div>
+                <input type="radio" id="option3" name="answer" value="Rome">
+                <label for="option3">Rome</label>
+            </div>
+            <div>
+                <input type="radio" id="option4" name="answer" value="Madrid">
+                <label for="option4">Madrid</label>
+            </div>
+            <button type="button" onclick="checkAnswer()">Vérifier</button>
+        </form>
+        <p id="result"></p>
+        <button id="nextExercise" style="display:none;" onclick="nextExercise()">Exercice suivant</button>
+    </div>
+    <script src="script3.js"></script>
+</body>
+</html>
