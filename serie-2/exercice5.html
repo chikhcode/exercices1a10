@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script5.js">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionnaire</h1>
+        <p>Quelle est la capitale du Japon ?</p>
+        <form id="quizForm">
+            <div>
+                <input type="radio" id="option1" name="answer" value="Tokyo">
+                <label for="option1">Tokyo</label>
+            </div>
+            <div>
+                <input type="radio" id="option2" name="answer" value="Pékin">
+                <label for="option2">Pékin</label>
+            </div>
+            <div>
+                <input type="radio" id="option3" name="answer" value="Séoul">
+                <label for="option3">Séoul</label>
+            </div>
+            <div>
+                <input type="radio" id="option4" name="answer" value="Bangkok">
+                <label for="option4">Bangkok</label>
+            </div>
+            <button type="button" onclick="checkAnswer()">Vérifier</button>
+        </form>
+        <p id="result"></p>
+        <button id="nextExercise" style="display:none;" onclick="nextExercise()">Exercice suivant</button>
+    </div>
+    <script src="script5.js"></script>
+</body>
+</html>
